@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skypin Recharge</title>
+  <link rel="stylesheet" href="skypin.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Skypin Recharge</h1>
+
+    <h2>Available Recharge Cards</h2>
+    <ul class="card-list">
+      <li>MTN - ₦100</li>
+      <li>Airtel - ₦200</li>
+      <li>Glo - ₦500</li>
+      <li>9mobile - ₦1000</li>
+    </ul>
+
+    <h2>Place Your Order</h2>
+    <form id="orderForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" required>
+
+      <label for="network">Network:</label>
+      <select id="network" required>
+        <option value="">Select</option>
+        <option value="MTN">MTN</option>
+        <option value="Airtel">Airtel</option>
+        <option value="Glo">Glo</option>
+        <option value="9mobile">9mobile</option>
+      </select>
+
+      <label for="amount">Amount:</label>
+      <select id="amount" required>
+        <option value="">Select</option>
+        <option value="100">₦100</option>
+        <option value="200">₦200</option>
+        <option value="500">₦500</option>
+        <option value="1000">₦1000</option>
+      </select>
+
+      <button type="submit">Submit Order</button>
+    </form>
+
+    <div id="message"></div>
+  </div>
+
+  <script src="skypin.js"></script>
+</body>
+</html>
